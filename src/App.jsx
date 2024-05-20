@@ -1,13 +1,12 @@
-import { useState } from "react";
+import Header from "src/components/Header";
 import Lines from "src/components/Lines";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="main-container">
       <Lines />
+      <Header />
     </div>
   );
 }
