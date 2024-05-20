@@ -11,7 +11,7 @@ const About = () => {
           <div className="left-left-section">
             <div className="circle" />
             <div>
-              <h1>Hi, I'm Nidhi Sharma</h1>
+              <h1>Hi, I&apos;m Nidhi Sharma</h1>
               <p>Frontend developer</p>
             </div>
           </div>
@@ -31,10 +31,15 @@ const About = () => {
         </div>
       </div>
       <div className="right-section">
-        <div className="layer-1" />
-        <div className="layer-2" />
-        <div className="layer-3" />
-        <div className="layer-4" />
+        <div className="layer-1 right-section-layers" />
+        <div className="layer-2 right-section-layers" />
+        <div className="layer-3 right-section-layers" />
+        <div className="layer-4 right-section-layers" />
+        {/* <i className="fa-solid fa-star" /> */}
+        {/* <i className="icon fa-solid fa-star" /> */}
+        {[...Array(15)].map((_, index) => (
+          <i key={index} className="icon fa-solid fa-star" />
+        ))}
         <img src="/src/assets/blue-girl.png" alt="girl" />
       </div>
     </div>

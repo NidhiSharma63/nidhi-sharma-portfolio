@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   overflow: scroll;
   overflow-x: hidden;
   padding: 3rem;
@@ -155,11 +155,10 @@ body {
   border-radius: 3rem;
   position: relative;
   overflow: hidden;
-    padding: 3rem;
+  padding: 3rem;
 }
 
-
-.animate-image{
+.animate-image {
   animation: rotateCardHelloBackground 100s linear infinite;
   height: 1010px;
   left: 50%;
@@ -185,7 +184,6 @@ body {
   align-items: flex-start;
   display: flex;
   justify-content: space-between;
-
 }
 
 .about .left-section-container .left-section h1 {
@@ -220,17 +218,16 @@ body {
 .left-right-section .fa-brands {
   font-size: 1.6rem;
   /* border: 1px solid red; */
-  padding: .6rem;
-  border-radius: .3rem;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.068);
 }
 
-
 /* Right section */
 .about .right-section {
   flex-grow: 5;
-  background-color: #ffd951;;
+  background-color: #ffd951;
   border-radius: 3rem;
   height: 350px;
   position: relative;
@@ -242,11 +239,11 @@ body {
   height: 450px;
 }
 
-.right-section img{
-width: 300px;
-position: relative;
-top: 5.2rem;
-animation: moveUpDown 3s ease-in-out infinite alternate;
+.right-section img {
+  width: 300px;
+  position: relative;
+  top: 5.2rem;
+  animation: moveUpDown 3s ease-in-out infinite alternate;
 }
 
 /* move image up dowm little bit */
@@ -263,44 +260,121 @@ animation: moveUpDown 3s ease-in-out infinite alternate;
 }
 
 /* Layer animation */
-
-.layer-1{
+.right-section-layers {
   width: 150%;
   height: 100%;
   position: absolute;
+  border-radius: 52%;
+}
+.layer-1 {
   background: #e8e6e69c;
   top: 74%;
-  border-radius: 52%;
 }
 
-.layer-2{
-  width: 150%;
-  height: 100%;
-  position: absolute;
+.layer-2 {
   background: #fdfdfd6c;
   top: 58%;
-  border-radius: 52%;
 }
-.layer-3{
-  width: 150%;
-  height: 100%;
-  position: absolute;
+.layer-3 {
   background: #fdfdfd34;
   top: 38%;
-  border-radius: 52%;
 }
-.layer-4{
-  width: 150%;
-  height: 100%;
-  position: absolute;
+.layer-4 {
   background: #fdfdfd17;
   top: 18%;
-  border-radius: 52%;
+}
+
+
+
+.right-section .icon {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.507);
+  font-size: .5rem
+}
+.right-section .icon:nth-of-type(1) {
+  top: 1rem;
+  left: 2rem;
+  animation: blink 1s ease-in-out 1.4s infinite alternate;
+}
+
+.right-section .icon:nth-of-type(2) {
+  top: 3rem;
+  left: 6rem;
+  animation: blink 1s ease-in-out 1.6s infinite alternate;
+}
+.right-section .icon:nth-of-type(3) {
+  top: 5rem;
+  left: 2rem;
+  animation: blink 1s ease-in-out 1.2s infinite alternate;
+}
+.right-section .icon:nth-of-type(4) {
+  top: 10rem;
+  left: 4rem;
+  animation: blink 1s ease-in-out 1.8s infinite alternate;
+}
+.right-section .icon:nth-of-type(5) {
+  top: 14rem;
+  left: 2rem;
+  animation: blink 1s ease-in-out 2s infinite alternate;
+}
+.right-section .icon:nth-of-type(6) {
+  top: 2rem;
+  left: 10rem;
+  animation: blink 1s ease-in-out 0.8s infinite alternate;
+}
+.right-section .icon:nth-of-type(7) {
+  top: 7rem;
+  left: 8rem;
+  animation: blink 1s ease-in-out 1s infinite alternate;
+}
+.right-section .icon:nth-of-type(8) {
+  top: 3rem;
+  left: 15rem;
+  animation: blink 1s ease-in-out 1.4s infinite alternate;
+}
+.right-section .icon:nth-of-type(9) {
+  top: 7rem;
+  left: 13rem;
+  animation: blink 1s ease-in-out 1.6s infinite alternate;
+}
+.right-section .icon:nth-of-type(10) {
+  top: 3rem;
+  left: 18rem;
+  animation: blink 1s ease-in-out 1.2s infinite alternate;
+}
+
+.right-section .icon:nth-of-type(11) {
+  top: 5rem;
+  left: 18rem;
+  animation: blink 1s ease-in-out 1.8s infinite alternate;
+}
+.right-section .icon:nth-of-type(12) {
+  top: 9rem;
+  left: 16rem;
+  animation: blink 1s ease-in-out 2s infinite alternate;
+}
+.right-section .icon:nth-of-type(13) {
+  top: 10rem;
+  left: 20rem;
+  animation: blink 1s ease-in-out 0.8s infinite alternate;
+}
+.right-section .icon:nth-of-type(14) {
+  top: 14rem;
+  left: 20rem;
+  animation: blink 1s ease-in-out 1s infinite alternate;
+}
+.right-section .icon:nth-of-type(14) {
+  top: 15rem;
+  left: 20rem;
+  animation: blink 1s ease-in-out 1.4s infinite alternate;
+}
+.right-section .icon:nth-of-type(15) {
+  top: 15rem;
+  left: 18rem;
+  animation: blink 1s ease-in-out 1.6s infinite alternate;
 }
 @media screen and (max-width: 900px) {
   .about {
     flex-direction: column;
   }
 }
-
-
