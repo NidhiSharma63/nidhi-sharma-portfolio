@@ -1,3 +1,4 @@
+import About from "src/components/About";
 import Header from "src/components/Header";
 import Lines from "src/components/Lines";
 import "./App.css";
@@ -7,6 +8,7 @@ function App() {
     <div className="main-container">
       <Lines />
       <Header />
+      <About />
     </div>
   );
 }
