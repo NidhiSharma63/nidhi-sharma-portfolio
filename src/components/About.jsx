@@ -30,7 +30,13 @@ const About = () => {
           programming through online resources and projects
         </div>
       </div>
-      <div className="right-section"></div>
+      <div className="right-section">
+        <div className="layer-1" />
+        <div className="layer-2" />
+        <div className="layer-3" />
+        <div className="layer-4" />
+        <img src="/src/assets/blue-girl.png" alt="girl" />
+      </div>
     </div>
   );
 };
