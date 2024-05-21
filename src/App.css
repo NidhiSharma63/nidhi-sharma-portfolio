@@ -159,6 +159,8 @@ body {
   position: relative;
   overflow: hidden;
   padding: 3rem;
+  border: 1px solid #6c5f5f75;
+
 }
 
 .animate-image {
@@ -439,14 +441,33 @@ body {
 .skills-and-contact {
   /* padding: 2rem; */
   display: grid;
-  grid-template-columns: minmax(700px, 1fr) minmax(200px, 1fr);
+  grid-template-columns: minmax(850px, 1fr) minmax(200px, 1fr);
   gap: 2rem;
   width: 100%;
-  border: 1px solid red;
+
+  /* border: 1px solid red; */
 }
 
 
 /* skills */
+
+.background-image-div {
+  /* Set the background image using a URL */
+  background-image: url('./assets/skills-section-bg.png');
+
+  /* Optional: Set the size of the background image */
+  background-size: cover;  /* Cover the entire area of the div */
+  
+  /* Optional: Set the position of the background image */
+  background-position: center;  /* Center the background image */
+
+  /* Optional: Ensure the background image does not repeat */
+  background-repeat: no-repeat;
+
+  /* Set the dimensions of the div (example dimensions) */
+  width: 500px;
+  height: 300px;
+}
 .skill-section{
   display: grid;
   /* auto fill upto 2 and after that only one */
@@ -455,8 +476,9 @@ body {
   padding: 2rem;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
+  border: 1px solid #6c5f5f75;
   border-radius: 3rem;
+  min-height: 250px;
 }
 .skill-left-section {
 flex-direction: column;

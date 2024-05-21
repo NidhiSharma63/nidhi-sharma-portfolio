@@ -1,7 +1,7 @@
 const SkillsAndContact = () => {
   return (
     <div className="skills-and-contact">
-      <div className="skill-section">
+      <div className="skill-section background-image-div">
         <div className="skill-left-section flex">
           <h6>My Skills</h6>
           <p>
