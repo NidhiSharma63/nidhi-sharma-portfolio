@@ -16,9 +16,27 @@ const About = () => {
             </div>
           </div>
           <div className="left-right-section flex">
-            <i className="fa-brands fa-github" />
-            <i className="fa-brands fa-linkedin-in" />
-            <i className="fa-brands fa-medium" />
+            <a
+              href="https://github.com/NidhiSharma63"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa-brands fa-github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nidhi-sharma-55329823b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa-brands fa-linkedin-in" />
+            </a>
+            <a
+              href="https://medium.com/@nidhisharma639593"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa-brands fa-medium" />
+            </a>
           </div>
         </div>
         <div className="middle-section">
