@@ -5,9 +5,16 @@ const Header = () => {
         Nidhi Sharma<span>,&nbsp;Frontend developer</span>
       </h1>
       <div className="nav flex">
-        <a href="#">About</a>
-        <a href="#">Work</a>
-        <a href="#">Blog</a>
+        <a href="#projects">Work</a>
+        <a href="#skills">Skills</a>
+        <a
+          href="https://medium.com/@nidhisharma639593"
+          target="_blank"
+          className="contact-links"
+          rel="noreferrer"
+        >
+          Blogs
+        </a>
       </div>
     </div>
   );

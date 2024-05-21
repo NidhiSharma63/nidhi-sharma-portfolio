@@ -6,11 +6,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
 body {
   overflow: hidden;
   font-family: "Inter", sans-serif;
   background-color: rgba(9, 5, 15, 0.741);
-
   /* padding: 3rem; */
 }
 
@@ -40,6 +42,7 @@ body {
   max-width: 1440px;
   margin: auto;
   gap: 3rem;
+    scroll-behavior: smooth !important;
 }
 
 /* line container */
