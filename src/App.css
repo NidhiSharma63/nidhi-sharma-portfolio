@@ -9,7 +9,7 @@
 body {
   overflow: hidden;
   font-family: "Inter", sans-serif;
-  background-color: rgba(9, 5, 15, 0.741)
+  background-color: rgba(9, 5, 15, 0.741);
 
   /* padding: 3rem; */
 }
@@ -287,12 +287,10 @@ body {
   top: 18%;
 }
 
-
-
 .right-section .icon {
   position: absolute;
   color: rgba(255, 255, 255, 0.507);
-  font-size: .5rem
+  font-size: 0.5rem;
 }
 .right-section .icon:nth-of-type(1) {
   top: 1rem;
@@ -379,7 +377,7 @@ body {
 
 /* project */
 
-.projects-container{
+.projects-container {
   display: grid;
   /* auto fill upto 2 and after that only one */
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -387,54 +385,187 @@ body {
   padding: 2rem;
 }
 
-.project{
+.project {
   cursor: pointer;
   flex-direction: column;
   text-align: center;
-  width: 500px;
+  /* width: 500px; */
   /* border: 1px solid rgba(255, 255, 255, 0.507); */
   padding: 2rem;
   gap: 1rem;
   border-radius: 3rem;
   color: rgb(17, 5, 5);
-   background: rgb(61,65,78) ;
-  background: radial-gradient(circle, rgb(61,65,78) 0%, rgb(14, 18, 24) 100%);
+  background: rgb(61, 65, 78);
+  background: radial-gradient(circle, rgb(61, 65, 78) 0%, rgb(14, 18, 24) 100%);
+  box-shadow: 0px 0px 17px 0px #2b2b2d5c;
+  border: 1px solid #6c5f5f75;
 }
 
-
-.project h3{
+.project h3 {
   font-size: 1.6rem;
   color: white;
 }
-.project p{
-  font-size: .8rem;
+.project p {
+  font-size: 0.8rem;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.521);
-  margin-top: .9rem;
+  margin-top: 0.9rem;
+  font-weight: 300;
 }
-.project div{
+.project div {
   width: 100%;
 }
-.project div img{
+.project div img {
   width: 100%;
   object-fit: contain;
   border-radius: 1rem;
 }
 
-.project-links-container{
+.project-links-container {
   gap: 1rem;
 }
-.project-links-container a{
+.project-links-container a {
   cursor: pointer;
   z-index: 9999;
 }
-.project-link{
-  font-size: 1.9rem;
+.project-link {
+  font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.534);
   /* cursor: pointer; */
+}
+
+/* skills and contact */
+
+.skills-and-contact {
+  /* padding: 2rem; */
+  display: grid;
+  grid-template-columns: minmax(700px, 1fr) minmax(200px, 1fr);
+  gap: 2rem;
+  width: 100%;
+  border: 1px solid red;
+}
+
+
+/* skills */
+.skill-section{
+  display: grid;
+  /* auto fill upto 2 and after that only one */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  border-radius: 3rem;
+}
+.skill-left-section {
+flex-direction: column;
+align-items: flex-start;
+}
+.skill-left-section h6{
+  font-size: 1.3rem;
+}
+.skill-left-section p{
+ font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.521);
+  margin-top: 0.9rem;
+  font-weight: 300;
+}
+.skill-right-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill-icon {
+  position: relative;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 0px 4px inset;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.skill-icon::after {
+  position: absolute;
+  content: "";
+  background-image: conic-gradient(#db1010 100deg, transparent 180deg);
+  height: 100%;
+  width: 140%;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  animation: border-rotate 2s linear infinite;
+}
+.skill-icon::before {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  border-radius: 50%;
+  content: "JS";
+  height: 90%;
+  width: 90%;
+  background-color: #ecf0f3;
+  box-shadow: 0px 0px 4px #093299;
+  text-align: center;
+  z-index: 2;
+}
+
+.skill-icon:nth-child(2)::before {
+  content: "React";
+  animation-delay: 0.4s;
+}
+.skill-icon:nth-child(3)::before {
+  content: "Tailwind";
+  animation-delay: 0.7s;
+}
+.skill-icon:nth-child(4)::before {
+  content: "TS";
+  font-size: 1.6rem;
+  animation-delay: 0.8s;
+}
+.skill-icon:nth-child(5)::before {
+  content: "Git";
+}
+.skill-icon:nth-child(6)::before {
+  content: "Scss";
+  animation-delay: 0.1s;
+}
+
+@keyframes border-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media screen and (max-width: 900px) {
   .about {
     flex-direction: column;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .skills-and-contact {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .skill-left-section {
+    align-items: center;
+    text-align: center;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 }

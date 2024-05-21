@@ -1,7 +1,7 @@
 import projectData from "src/assets/data.js";
 
 const Projects = () => {
-  return (
+	return (
     <div className="projects-container">
       {projectData.map((data) => {
         return (
@@ -14,10 +14,10 @@ const Projects = () => {
               <img src={data.image1} alt="project-image" />
             </div>
             <div className="project-links-container flex">
-              <a href={data.live}>
-                <i className="fa-solid fa-link project-link" />
+              <a href={data.live} target="_blank" rel="noreferrer">
+                <i className="fa-solid fa-up-right-from-square project-link" />
               </a>
-              <a href={data.github}>
+              <a href={data.github} target="_blank" rel="noreferrer">
                 <i className="fa-brands fa-github project-link" />
               </a>
             </div>
