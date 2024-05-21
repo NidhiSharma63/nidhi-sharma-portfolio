@@ -1,5 +1,7 @@
+import { skills } from "src/assets/data";
+
 const SkillsAndContact = () => {
-	return (
+  return (
     <div className="skills-and-contact">
       <div className="skill-section background-image-div">
         <div className="skill-left-section flex">
@@ -17,90 +19,23 @@ const SkillsAndContact = () => {
             <button className="btn">Get Resume</button>
           </a>
         </div>
-        <div
-          className="skill-right-s
-        ection"
-        >
-          {/* <div className="skill-icon"> */}
-          <img
-            src="/src/assets/react.png"
-            style={{
-              width: "70px",
-              height: "70px",
-              borderRadius: "50%",
-              zIndex: "9999",
-            }}
-          />
-          <img
-            src="/src/assets/javscript.png"
-            style={{
-              width: "70px",
-              height: "70px",
-              borderRadius: "50%",
-              zIndex: "9999",
-            }}
-          />
-          <img
-            src="/src/assets/nodejs.png"
-            style={{
-              width: "70px",
-              height: "70px",
-              // borderRadius: "50%",
-              zIndex: "9999",
-            }}
-          />
-          <img
-            src="/src/assets/mongodb.png"
-            style={{
-              width: "70px",
-              height: "70px",
-              borderRadius: "50%",
-              zIndex: "9999",
-              objectFit: "contain",
-            }}
-          />
-          {/* </div> */}
-          <img
-            src="/src/assets/nextjs.png"
-            style={{
-              width: "70px",
-              height: "70px",
-              borderRadius: "50%",
-              zIndex: "9999",
-              objectFit: "contain",
-            }}
-          />
-          <img
-            src="/src/assets/tailwind.jpg"
-            style={{
-              width: "70px",
-              height: "70px",
-              // borderRadius: "50%",
-              zIndex: "9999",
-              objectFit: "contain",
-            }}
-          />
-
-          <img
-            src="/src/assets/typescript.png"
-            style={{
-              width: "70px",
-              height: "70px",
-              // borderRadius: "50%",
-              zIndex: "9999",
-              objectFit: "contain",
-            }}
-          />
-          <img
-            src="/src/assets/github.png"
-            style={{
-              width: "70px",
-              height: "70px",
-              // borderRadius: "50%",
-              zIndex: "9999",
-              objectFit: "contain",
-            }}
-          />
+        <div className="skill-right-section">
+          {skills.map((skill) => {
+            return (
+              <img
+                key={skill}
+                src={skill}
+                style={{
+                  width: "70px",
+                  height: "70px",
+                  // borderRadius: "50%",
+                  zIndex: "9999",
+                  objectFit: "contain",
+                }}
+                alt="skill"
+              />
+            );
+          })}
         </div>
       </div>
       <div className="contact-section flex">

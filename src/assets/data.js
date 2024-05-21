@@ -1,7 +1,7 @@
 import snapgram from "src/assets/snapgram.png";
 import taskmaster from "src/assets/taskmaster.png";
 
-export const projectData = [
+const projectData = [
   {
     image1: `${taskmaster}`,
     projectName: `Task Master`,
@@ -35,4 +35,17 @@ export const projectData = [
   // },
 ];
 
-export default projectData;
+const skills = [
+  "/src/assets/react.png",
+  "/src/assets/nodejs.png",
+  "/src/assets/javscript.png",
+  "/src/assets/mongodb.png",
+  "/src/assets/nextjs.png",
+  "/src/assets/tailwind.jpg",
+  "/src/assets/typescript.png",
+  "/src/assets/github.png",
+];
+
+// export it 
+export { projectData, skills };
+// export { projectData, skills };

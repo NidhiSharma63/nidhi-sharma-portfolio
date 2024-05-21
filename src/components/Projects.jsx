@@ -1,7 +1,7 @@
-import projectData from "src/assets/data.js";
+import { projectData } from "src/assets/data.js";
 
 const Projects = () => {
-	return (
+  return (
     <div className="projects-container">
       {projectData.map((data) => {
         return (
