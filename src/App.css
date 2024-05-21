@@ -16,7 +16,7 @@ body {
   /* padding: 3rem; */
 }
 
- .fa-brands {
+.fa-brands {
   font-size: 1.6rem;
   /* border: 1px solid red; */
   padding: 0.6rem;
@@ -42,7 +42,7 @@ body {
   max-width: 1440px;
   margin: auto;
   gap: 3rem;
-    scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
 /* line container */
@@ -144,6 +144,7 @@ body {
   gap: 1rem;
   font-size: 1.3rem;
   font-weight: 300;
+  display: flex;
 }
 .nav a {
   color: rgba(255, 255, 255, 0.233);
@@ -172,7 +173,6 @@ body {
   overflow: hidden;
   padding: 3rem;
   border: 1px solid #6c5f5f75;
-
 }
 
 .animate-image {
@@ -231,9 +231,6 @@ body {
   gap: 1rem;
   align-self: center;
 }
-
-
-
 
 /* Right section */
 .about .right-section {
@@ -388,7 +385,7 @@ body {
 .projects-container {
   display: grid;
   /* auto fill upto 2 and after that only one */
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2rem;
   padding: 2rem;
 }
@@ -448,25 +445,24 @@ body {
 .skills-and-contact {
   /* padding: 2rem; */
   display: grid;
-  grid-template-columns: minmax(850px, 1fr) minmax(200px, 1fr);
+  grid-template-columns: minmax(200px, 800px) minmax(200px, 1fr);
   gap: 2rem;
   width: 100%;
 
   /* border: 1px solid red; */
 }
 
-
 /* skills */
 
 .background-image-div {
   /* Set the background image using a URL */
-  background-image: url('./assets/skills-section-bg.png');
+  background-image: url("./assets/skills-section-bg.png");
 
   /* Optional: Set the size of the background image */
-  background-size: cover;  /* Cover the entire area of the div */
-  
+  background-size: cover; /* Cover the entire area of the div */
+
   /* Optional: Set the position of the background image */
-  background-position: center;  /* Center the background image */
+  background-position: center; /* Center the background image */
 
   /* Optional: Ensure the background image does not repeat */
   background-repeat: no-repeat;
@@ -475,7 +471,7 @@ body {
   width: 500px;
   height: 300px;
 }
-.skill-section{
+.skill-section {
   display: grid;
   /* auto fill upto 2 and after that only one */
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -488,31 +484,32 @@ body {
   min-height: 250px;
 }
 .skill-left-section {
-flex-direction: column;
-align-items: flex-start;
-/* gap: 1rem; */
+  flex-direction: column;
+  align-items: flex-start;
+  /* gap: 1rem; */
 }
-.btn{
+.btn {
   margin-top: 1.5rem;
   /* col; */
 }
-.btn:hover{
+.btn:hover {
   border-color: transparent;
 }
-.btn:focus, .btn:focus-visible {
-    outline: none;
+.btn:focus,
+.btn:focus-visible {
+  outline: none;
 }
-.skill-left-section h6{
+.skill-left-section h6 {
   font-size: 1.3rem;
 }
-.skill-left-section p{
- font-size: 0.8rem;
+.skill-left-section p {
+  font-size: 0.8rem;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.521);
   margin-top: 0.9rem;
   font-weight: 300;
 }
-.skill-right-section{
+.skill-right-section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -523,7 +520,7 @@ align-items: flex-start;
 
 .skill-icon {
   position: relative;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -545,7 +542,7 @@ align-items: flex-start;
   animation: border-rotate 2s linear infinite;
 }
 .skill-icon::before {
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -589,13 +586,8 @@ align-items: flex-start;
     transform: rotate(360deg);
   }
 }
-@media screen and (max-width: 900px) {
-  .about {
-    flex-direction: column;
-  }
-}
 
-.contact-section{
+.contact-section {
   flex-direction: column;
   background: linear-gradient(311.97deg, #ffa51f 0%, #e93f0c 100%);
   /* border: 1px solid red; */
@@ -605,7 +597,7 @@ align-items: flex-start;
   position: relative;
 }
 
-.contact-section img{
+.contact-section img {
   width: 300px;
   height: 300px;
   position: relative;
@@ -613,37 +605,75 @@ align-items: flex-start;
   animation: moveUpDown 3s ease-in-out infinite alternate;
 }
 
-.contact-section p{
+.contact-section p {
   font-size: 1rem;
   text-align: center;
 }
-.contact-section .contact-links{
+.contact-section .contact-links {
   position: absolute;
   display: block;
 }
 
-.contact-section .contact-links:nth-of-type(1){
+.contact-section .contact-links:nth-of-type(1) {
   top: 9rem;
   left: 18rem;
   animation: moveUpDown 5s ease-in-out infinite alternate;
 }
 
-.contact-section .contact-links:nth-of-type(2){
+.contact-section .contact-links:nth-of-type(2) {
   top: 7rem;
   left: 2rem;
   animation: moveUpDown 3s ease-in-out infinite alternate;
 }
 
-
-.contact-section .contact-links:nth-of-type(3){
+.contact-section .contact-links:nth-of-type(3) {
   top: 16rem;
   left: 2rem;
 
   animation: moveUpDown 6s ease-in-out infinite alternate;
 }
 
+@media (max-width: 750px) {
+  .main-container {
+    padding: 1rem;
+  }
+  .nav {
+    border: 1px solid red;
+    display: none;
+  }
+  .header h1 {
+    font-size: 1rem;
+  }
+  /* about */
+  .left-right-section .fa-brands {
+    font-size: 0.6rem;
+    padding: 0.3rem;
+  }
+  .about .left-section-container .left-section h1 {
+    font-size: 1rem;
+  }
 
-@media (max-width: 700px) {
+  .about .left-section-container .left-section p {
+    font-size: 0.7rem;
+  }
+
+  .about .middle-section {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 33px;
+  }
+
+  .about .last-section {
+    font-size: 0.7rem;
+    line-height: 20px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.616);
+  }
+}
+@media (max-width: 1000px) {
+  .about {
+    flex-direction: column;
+  }
   .skills-and-contact {
     grid-template-columns: 1fr;
     padding: 0;
