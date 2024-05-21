@@ -1,6 +1,15 @@
 import snapgram from "src/assets/snapgram.png";
 import taskmaster from "src/assets/taskmaster.png";
 
+import github from "/src/assets/github.png";
+import javascript from "/src/assets/javscript.png";
+import mongodb from "/src/assets/mongodb.png";
+import nextjs from "/src/assets/nextjs.png";
+import node from "/src/assets/nodejs.png";
+import react from "/src/assets/react.png";
+import tailwind from "/src/assets/tailwind.jpg";
+import typescript from "/src/assets/typescript.png";
+
 const projectData = [
   {
     image1: `${taskmaster}`,
@@ -36,14 +45,14 @@ const projectData = [
 ];
 
 const skills = [
-  "/src/assets/react.png",
-  "/src/assets/nodejs.png",
-  "/src/assets/javscript.png",
-  "/src/assets/mongodb.png",
-  "/src/assets/nextjs.png",
-  "/src/assets/tailwind.jpg",
-  "/src/assets/typescript.png",
-  "/src/assets/github.png",
+  react,
+  node,
+  javascript,
+  nextjs,
+  mongodb,
+  tailwind,
+  typescript,
+  github,
 ];
 
 // export it 

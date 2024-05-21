@@ -1,4 +1,5 @@
 import { skills } from "src/assets/data";
+import yogaGirl from "/src/assets/yoga-girl.png";
 
 const SkillsAndContact = () => {
   return (
@@ -47,7 +48,7 @@ const SkillsAndContact = () => {
             <strong>nidhisharma639593@gmail.com</strong>
           </p>
         </div>
-        <img src="/src/assets/yoga-girl.png" alt="yoga-girl" />
+        <img src={yogaGirl} alt="yoga-girl" />
         <a
           href="https://github.com/NidhiSharma63"
           target="_blank"

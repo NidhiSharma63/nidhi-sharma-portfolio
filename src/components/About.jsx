@@ -1,12 +1,10 @@
+import bg from "src/assets/card-hello-background.png";
+import girl from "/src/assets/blue-girl.png";
 const About = () => {
   return (
     <div className="about">
       <div className="left-section-container animated-background">
-        <img
-          src="/src/assets/card-hello-background.png"
-          alt="bg-image"
-          className="animate-image"
-        />
+        <img src={bg} alt="bg-image" className="animate-image" />
         <div className="left-section flex">
           <div className="left-left-section">
             <div className="circle" />
@@ -58,7 +56,7 @@ const About = () => {
         {[...Array(15)].map((_, index) => (
           <i key={index} className="icon fa-solid fa-star" />
         ))}
-        <img src="/src/assets/blue-girl.png" alt="girl" />
+        <img src={girl} alt="girl" />
       </div>
     </div>
   );
