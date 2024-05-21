@@ -9,7 +9,7 @@
 body {
   overflow: hidden;
   font-family: "Inter", sans-serif;
-  background-color: #09050f;
+  background-color: rgba(9, 5, 15, 0.741)
 
   /* padding: 3rem; */
 }
@@ -30,16 +30,19 @@ body {
   padding: 3rem;
   max-width: 1440px;
   margin: auto;
+  gap: 3rem;
 }
 
 /* line container */
 
 .line-container {
   display: flex;
-  height: 60vh;
+  height: 100vh;
   width: 100vw;
   position: absolute;
   top: -3rem;
+  z-index: -1;
+  /* background-color: b; */
 }
 .line {
   border-right: 0.5px solid rgba(255, 255, 255, 0.048);
@@ -205,9 +208,9 @@ body {
 }
 .about .last-section {
   font-size: 1.2rem;
-  line-height: 25px;
+  line-height: 30px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.233);
+  color: rgba(255, 255, 255, 0.616);
 }
 
 .about .left-right-section {
@@ -372,6 +375,63 @@ body {
   top: 15rem;
   left: 18rem;
   animation: blink 1s ease-in-out 1.6s infinite alternate;
+}
+
+/* project */
+
+.projects-container{
+  display: grid;
+  /* auto fill upto 2 and after that only one */
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project{
+  cursor: pointer;
+  flex-direction: column;
+  text-align: center;
+  width: 500px;
+  /* border: 1px solid rgba(255, 255, 255, 0.507); */
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 3rem;
+  color: rgb(17, 5, 5);
+   background: rgb(61,65,78) ;
+  background: radial-gradient(circle, rgb(61,65,78) 0%, rgb(14, 18, 24) 100%);
+}
+
+
+.project h3{
+  font-size: 1.6rem;
+  color: white;
+}
+.project p{
+  font-size: .8rem;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.521);
+  margin-top: .9rem;
+}
+.project div{
+  width: 100%;
+}
+.project div img{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+.project-links-container{
+  gap: 1rem;
+}
+.project-links-container a{
+  cursor: pointer;
+  z-index: 9999;
+}
+.project-link{
+  font-size: 1.9rem;
+  color: rgba(255, 255, 255, 0.534);
+  /* cursor: pointer; */
 }
 @media screen and (max-width: 900px) {
   .about {
