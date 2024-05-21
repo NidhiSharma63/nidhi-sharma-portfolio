@@ -518,66 +518,12 @@ body {
   margin: auto;
 }
 
-.skill-icon {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 80px;
-  height: 80px;
-  box-shadow: 0px 0px 4px inset;
-  border-radius: 50%;
-  overflow: hidden;
+.skill-icon{
+  width: 70px;
+  height: 70px;
+  z-index: 9999;
+  object-fit: contain;
 }
-
-.skill-icon::after {
-  position: absolute;
-  content: "";
-  background-image: conic-gradient(#db1010 100deg, transparent 180deg);
-  height: 100%;
-  width: 140%;
-  border-radius: 50%;
-  transform: rotate(0deg);
-  animation: border-rotate 2s linear infinite;
-}
-.skill-icon::before {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  position: absolute;
-  border-radius: 50%;
-  content: "JS";
-  height: 90%;
-  width: 90%;
-  background-color: #ecf0f3;
-  box-shadow: 0px 0px 4px #093299;
-  text-align: center;
-  z-index: 2;
-}
-
-.skill-icon:nth-child(2)::before {
-  content: "React";
-  animation-delay: 0.4s;
-}
-.skill-icon:nth-child(3)::before {
-  content: "Tailwind";
-  animation-delay: 0.7s;
-}
-.skill-icon:nth-child(4)::before {
-  content: "TS";
-  font-size: 1.6rem;
-  animation-delay: 0.8s;
-}
-.skill-icon:nth-child(5)::before {
-  content: "Git";
-}
-.skill-icon:nth-child(6)::before {
-  content: "Scss";
-  animation-delay: 0.1s;
-}
-
 @keyframes border-rotate {
   0% {
     transform: rotate(0deg);
@@ -668,6 +614,10 @@ body {
     line-height: 20px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.616);
+  }
+  .skill-icon{
+    width: 40px;
+    height: 40px;
   }
 }
 @media (max-width: 1000px) {

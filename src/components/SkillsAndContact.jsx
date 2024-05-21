@@ -25,13 +25,14 @@ const SkillsAndContact = () => {
               <img
                 key={skill}
                 src={skill}
-                style={{
-                  width: "70px",
-                  height: "70px",
-                  // borderRadius: "50%",
-                  zIndex: "9999",
-                  objectFit: "contain",
-                }}
+                className="skill-icon"
+                // style={{
+                //   width: "70px",
+                //   height: "70px",
+                //   // borderRadius: "50%",
+                //   zIndex: "9999",
+                //   objectFit: "contain",
+                // }}
                 alt="skill"
               />
             );
