@@ -18,7 +18,7 @@ const Projects = () => {
                 <i className="fa-solid fa-up-right-from-square project-link" />
               </a>
               <a href={data.github} target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-github project-link" />
+                <i className="fa-brands fa-github project-link"></i>
               </a>
             </div>
           </div>

@@ -14,6 +14,15 @@ body {
   /* padding: 3rem; */
 }
 
+ .fa-brands {
+  font-size: 1.6rem;
+  /* border: 1px solid red; */
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.205);
+  color: white;
+}
 .flex {
   display: flex;
   justify-content: center;
@@ -221,15 +230,7 @@ body {
 }
 
 
- .fa-brands {
-  font-size: 1.6rem;
-  /* border: 1px solid red; */
-  padding: 0.6rem;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.205);
-  color: white;
-}
+
 
 /* Right section */
 .about .right-section {
@@ -435,6 +436,7 @@ body {
 .project-link {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.534);
+  background-color: transparent !important;
   /* cursor: pointer; */
 }
 
