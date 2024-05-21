@@ -148,7 +148,7 @@ body {
 }
 .header h1 span {
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.233);
+  color: rgba(255, 255, 255, 0.445);
 }
 .nav {
   gap: 1rem;
@@ -157,7 +157,7 @@ body {
   display: flex;
 }
 .nav a {
-  color: rgba(255, 255, 255, 0.233);
+  color: rgba(255, 255, 255, 0.445);
   cursor: pointer;
 }
 
@@ -219,7 +219,7 @@ body {
 
 .about .left-section-container .left-section p {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.233);
+  color: rgba(255, 255, 255, 0.445);
 }
 .about .left-section p {
   flex-wrap: wrap;
@@ -234,7 +234,7 @@ body {
   font-size: 1.2rem;
   line-height: 30px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.616);
+  color: rgba(255, 255, 255, 0.925);
 }
 
 .about .left-right-section {
@@ -423,7 +423,7 @@ body {
 .project p {
   font-size: 0.8rem;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.521);
+  color: rgba(255, 255, 255, 0.74);
   margin-top: 0.9rem;
   font-weight: 300;
 }
@@ -445,7 +445,7 @@ body {
 }
 .project-link {
   font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.534);
+  color: rgba(255, 255, 255, 0.829);
   background-color: transparent !important;
   /* cursor: pointer; */
 }
@@ -515,7 +515,7 @@ body {
 .skill-left-section p {
   font-size: 0.8rem;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.521);
+  color: rgba(255, 255, 255, 0.767);
   margin-top: 0.9rem;
   font-weight: 300;
 }
