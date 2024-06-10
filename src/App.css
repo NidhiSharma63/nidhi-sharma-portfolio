@@ -416,13 +416,18 @@ body {
   /* auto fill upto 2 and after that only one */
   /* grid-template-columns: repeat(2 minmax(400px, 1fr)); */
   /* define 2 coloumns only maximum of 400px  */
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 2rem;
   place-items: center;
   /* border: 1px solid red; */
 }
 
+/* .projects-container .project:nth-last-child(1):nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  
+} */
 .project {
   cursor: pointer;
   flex-direction: column;

@@ -1,3 +1,4 @@
+import paperland from "src/assets/paperland.png";
 import snapgram from "src/assets/snapgram.png";
 import taskmaster from "src/assets/taskmaster.png";
 
@@ -24,6 +25,13 @@ const projectData = [
     projectDesc: `This is a intagram clone that is have made using MERN stack with typescript. It provides all the instagram functionality and it is fully responsive.`,
     live: "https://snapgram-green.vercel.app/",
     github: "https://github.com/NidhiSharma63/snapgram",
+  },
+  {
+    image1: `${paperland}`,
+    projectName: `Paper + land clone`,
+    projectDesc: `This is a clone of paperland. It is fully responsive and i have made this clone using gsap. `,
+    live: "https://paper-land-clone.vercel.app/",
+    github: "https://github.com/NidhiSharma63/paper-land-clone",
   },
   // {
   //   image1: `${youtube}`,
@@ -55,6 +63,6 @@ const skills = [
   github,
 ];
 
-// export it 
+// export it
 export { projectData, skills };
 // export { projectData, skills };
