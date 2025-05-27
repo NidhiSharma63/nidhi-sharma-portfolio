@@ -2,7 +2,7 @@ import bg from "src/assets/card-hello-background.png";
 import girl from "/src/assets/blue-girl.png";
 const About = () => {
   return (
-    <div className="about">
+    <div className="about max-width ">
       <div className="left-section-container animated-background">
         <img src={bg} alt="bg-image" className="animate-image" />
         <div className="left-section flex">

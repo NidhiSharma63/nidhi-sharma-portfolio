@@ -3,7 +3,7 @@ import yogaGirl from "/src/assets/yoga-girl.png";
 
 const SkillsAndContact = () => {
   return (
-    <div className="skills-and-contact" id="skills">
+    <div className="skills-and-contact max-width " id="skills">
       <div className="skill-section background-image-div">
         <div className="skill-left-section flex">
           <h6>My Skills</h6>

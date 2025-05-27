@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="header flex">
+    <div className="header flex max-width">
       <h1 className="title">
         Nidhi Sharma<span>,&nbsp;Frontend developer</span>
       </h1>

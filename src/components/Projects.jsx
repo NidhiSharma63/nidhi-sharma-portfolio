@@ -2,7 +2,7 @@ import { projectData } from "src/assets/data.js";
 
 const Projects = () => {
   return (
-    <div className="projects-container" id="projects">
+    <div className="projects-container max-width " id="projects">
       {projectData.map((data) => {
         return (
           <div className="project flex" key={data.projectName}>

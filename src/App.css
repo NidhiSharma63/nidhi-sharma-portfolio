@@ -48,13 +48,18 @@ body {
   gap: 3rem;
   scroll-behavior: smooth !important;
   padding: 3rem;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: auto;
   /* border: 2px solid green; */
   /* padding-top: 7rem; */
 
   position: relative;
   overflow-x: hidden;
+}
+
+.max-width {
+  max-width: 1440px;
+  margin: auto;
 }
 /* modifiy scrollbar */
 
