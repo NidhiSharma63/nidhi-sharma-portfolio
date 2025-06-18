@@ -609,7 +609,7 @@ body {
 
 .contact-section .contact-links:nth-of-type(1) {
   top: 9rem;
-  left: 18rem;
+  left: 28rem;
   animation: moveUpDown 5s ease-in-out infinite alternate;
 }
 
