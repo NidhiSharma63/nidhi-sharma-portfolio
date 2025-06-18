@@ -211,13 +211,13 @@ body {
 
 .animate-image {
   animation: rotateCardHelloBackground 100s linear infinite;
-  height: 1010px;
+  height: 1440px;
   left: 50%;
   pointer-events: none;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 1010px;
+  width: 1440px;
   z-index: 1;
 }
 
