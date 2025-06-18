@@ -679,6 +679,11 @@ body {
       gap: 3rem;
     /* border: 1px solid red; */
   }
+  .contact-section .contact-links:nth-of-type(1) {
+  top: 9rem;
+  left: 19rem;
+  animation: moveUpDown 5s ease-in-out infinite alternate;
+}
 }
 @media (max-width: 1000px) {
   .about {
