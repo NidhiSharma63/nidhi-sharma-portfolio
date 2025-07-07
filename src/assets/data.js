@@ -1,4 +1,4 @@
-import paperland from "src/assets/paperland.png";
+import kanvue from "src/assets/kanvue.png";
 import snapgram from "src/assets/snapgram.png";
 import taskmaster from "src/assets/taskmaster.png";
 
@@ -13,6 +13,14 @@ import typescript from "/src/assets/typescript.png";
 
 const projectData = [
   {
+    image1: `${kanvue}`,
+    projectName: `kanvue vue.js library`,
+    projectDesc: `I Created a reusable Vue component library for smooth drag-and-drop interactions and it Supports custom cards, columns, slot support, and reactive state. 450+ Downloads on npm `,
+    live: "https://www.npmjs.com/package/kanvue",
+    github: "https://github.com/NidhiSharma63/vue-kanban",
+  },
+
+  {
     image1: `${taskmaster}`,
     projectName: `Task Master`,
     projectDesc: `The app is task Manager app built using MUI, React, Mongodb,Node, Express. Here you can create task with uploading images and managed your daily routine. `,
@@ -26,13 +34,13 @@ const projectData = [
     live: "https://snapgram-green.vercel.app/",
     github: "https://github.com/NidhiSharma63/snapgram",
   },
-  {
-    image1: `${paperland}`,
-    projectName: `🌟 Paper + land clone 🌟`,
-    projectDesc: `This is a clone of paperland. It is fully responsive and i have made this clone using gsap. `,
-    live: "https://paper-land-clone.vercel.app/",
-    github: "https://github.com/NidhiSharma63/paper-land-clone",
-  },
+  // {
+  //   image1: `${paperland}`,
+  //   projectName: `🌟 Paper + land clone 🌟`,
+  //   projectDesc: `This is a clone of paperland. It is fully responsive and i have made this clone using gsap. `,
+  //   live: "https://paper-land-clone.vercel.app/",
+  //   github: "https://github.com/NidhiSharma63/paper-land-clone",
+  // },
   // {
   //   image1: `${youtube}`,
   //   projectName: `Youtube Clone`,
