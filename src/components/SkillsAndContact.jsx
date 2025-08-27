@@ -14,7 +14,7 @@ const SkillsAndContact = () => {
           </p>
           <a
             target="_blank"
-            href="https://drive.google.com/file/d/1qii65XqVwdCyZoyFklt9dH3rfkGB0WVV/view?usp=sharing"
+            href="https://drive.google.com/file/d/1vo5y1h6sk_IRvasga1s4fVOZIwELk4uN/view?usp=sharing"
             rel="noreferrer"
           >
             <button className="btn">Get Resume</button>
